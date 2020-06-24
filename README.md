@@ -76,5 +76,6 @@ Finally, the web app comes with API access for users to query details about a bo
 
 * Used Heroku to create and host the database for the application  
 * books.csv was the file with data of 5000 books used to populate the database. Here, a sample file with 10 books is given
+* The 3 Rs refer to Reading, wRiting, and aRithmentic, hence the title (in case you were wondering!)
 * psst.. the images used in the website are hand drawn :smiley:  
 
