@@ -26,39 +26,50 @@ Finally, the web app comes with API access for users to query details about a bo
 
 ## Screenshots from the web-app 
 
-* Index page
+* Index page  
+<p>
 <img src="screenshots/index.png"
      alt="Index page"
      height = "200"
      width = "300"/>
+</p>
 
+* Log in page  (registration looks similar)  
 
-* Log in page  (registration looks similar)
+<p>
 <img src="screenshots/login.png"
      alt="Log in page"
      height = "200"
      width = "300"/>
+</p>
 
 
-* Main page after logging in
+
+* Main page after logging in  
+<p>
 <img src="screenshots/main.png"
      alt="Main page"
      height = "200"
      width = "300"/>
+</p>
 
 
-* Search results page
+* Search results page  
+<p>
 <img src="screenshots/search.png"
      alt="Search results page"
      height = "200"
      width = "300"/>
+</p>
 
 
-* Details of a particular book page
+* Details of a particular book page  
+<p>
 <img src="screenshots/book.png"
      alt="Book page"
      height = "200"
      width = "300"/>
+</p>
 
 
 ## Comments  
