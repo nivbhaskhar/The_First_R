@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    Log in
+{% endblock %}
+
+
+
+
+{% block body %}
+
+
+<div class="myform">
+  Please log in with your username and password <br>
+
+  <form action = {{url_for('login')}} method = "post">
+    <div class="myformelement">
+      <input type="text" name="username" placeholder="Enter username" required>
+    </div>
+    <div class="myformelement">
+      <input type="password" name="password" placeholder="Enter password" required>
+    </div>
+    <div class="myformelement">
+      <button> Log in </button>
+      </div>
+</form>
+</div>
+
+{% endblock %}

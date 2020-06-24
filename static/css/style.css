@@ -1,0 +1,109 @@
+
+html, body {margin:0;padding:0;height:100%;width: 100%}
+
+body {
+  margin:0;
+  padding:0;
+  color: black;
+  overflow: hidden;
+  background-color:#faf3e6 ;
+}
+
+
+
+
+.mycontainer {
+    margin:0;
+    padding:0;
+    display: grid;
+    height : 100%;
+    width : 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 0.5fr;
+}
+
+
+.myleftcol {
+    margin:0;
+    padding:0;
+    /* height : 100%; */
+    /* width : 100%; */
+    background-color: black;
+    /*border: 2px solid red;*/
+    color: white;
+    
+}
+
+
+.myrightcol {
+     margin:0;
+     padding:0;
+    /*  height : 100%; */
+    /* width : 100%; */
+    background-color: #faf3e6;
+    color: black;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+a {
+  color: brown;
+}
+
+
+h1 {
+    font-family: "arial";
+    font-weight: bold;
+    font-size:3vw;
+    margin: auto;
+    color: black;
+    text-align: center;
+}
+
+.mywhite{
+    color: white;
+}
+
+
+h2 {
+    font-size:3vw;
+    margin: auto;
+    color: black;
+    text-align: center;
+}
+
+.mylinks {
+    font-size:2vw;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.mylink {
+    font-size:2vw;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.myform{
+ font-size:2vw;
+ margin: auto;
+ text-align: center;
+ padding: 20px;
+}
+
+.myformelement{
+ font-size:2vw;
+ margin: auto;
+ text-align: center;
+ padding: 20px;
+}
+

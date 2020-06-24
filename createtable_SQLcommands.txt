@@ -1,0 +1,20 @@
+CREATE TABLE userdetails(
+user_id SERIAL PRIMARY KEY,
+username VARCHAR NOT NULL,
+password VARCHAR NOT NULL
+);
+
+CREATE TABLE bookdetails(
+isbn VARCHAR PRIMARY KEY,
+title VARCHAR,
+author VARCHAR,
+year INTEGER
+);
+
+CREATE TABLE reviewdetails(
+book_isbn VARCHAR REFERENCES bookdetails,
+review TEXT,
+reviewer_id INTEGER REFERENCES userdetails,
+rating INTEGER
+);
+

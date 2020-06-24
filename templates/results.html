@@ -1,0 +1,21 @@
+{% extends "layout_main.html" %}
+
+{% block body %}
+<div class="mygridcontainer">
+  <div class="mygridelement"></div>
+  <div class="mygridelement">
+    {% if results_exist is true %}
+    <h3>Results</h3>
+    <ol>
+      {% for book in books_to_be_displayed %}
+      <li><a href = "{{url_for('bookdetails', queried_isbn=book.isbn)}}">
+	  {{book.isbn}} </a> : {{book.title}} by {{book.author}}</li>
+      {% endfor %}
+    </ol>
+    {% else %}
+    <h3><span style="color:brown;">No results found. Please try a different query!</span></h3>
+    {% endif %}
+  </div>
+  <div class="mygridelement"></div>
+ </div>
+{% endblock %}

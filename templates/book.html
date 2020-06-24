@@ -1,0 +1,78 @@
+{% extends "layout_main.html" %}
+
+
+
+{% block body %}
+<div class="myflexcontainer">
+  <div>
+    <div>
+      <h3>Book details</h3>
+      <div class="bookdetails">
+	<div> Title : {{book_details_to_be_displayed.title}} </div>
+	<div> Year :  {{book_details_to_be_displayed.year}}   </div>
+	<div> Author : {{book_details_to_be_displayed.author}}   </div>
+	<div> ISBN : {{book_details_to_be_displayed.isbn}}  </div>
+	{% if  goodreads_flag is true %}
+	<div> Goodreads average rating : {{ goodreads_data_to_be_displayed["avg_rating"]}}  </div>
+	<div> Goodreads ratings count :  {{goodreads_data_to_be_displayed["ratings_count"]}}  </div>
+	{% endif %}
+      </div>
+    </div>
+    
+    <div style="margin-top: 50px">
+      {% if reviews_exist is true %}
+      <h3>Here's what others thought about this book </h3>
+      <ul>
+      {% for review in reviews_to_be_displayed %}
+
+	<div>
+	  <li> <span style="color: brown;">{{review.username}}</span> gave {{review.rating}} out of 5 stars <br>
+	       {% if review.review != '' %}
+	           They said  &quot;{{review.review}} &quot;
+	    {% endif %}
+	  </li>
+	</div> 
+	{% endfor %}
+      </ul>
+      {% else %}
+      <h3> Others haven't reviewed this book yet! </h3>
+      {% endif %}
+    </div>
+
+  </div>
+ 
+
+  <div>
+    {% if client_review_to_be_displayed is not none %}
+    <h3>Your review</h3>
+    <div class="clientreviewdetails">
+      <div>You gave {{client_review_to_be_displayed.rating}} out of 5 stars </div>
+      {% if (client_review_to_be_displayed.review != '') and (client_review_to_be_displayed.review != none)  %}
+      <div>You said &quot;{{client_review_to_be_displayed.review}}&quot;  </div>
+      {% endif %}
+    </div>
+    {% else %}
+    <h3>You haven't rated this book yet!</h3>
+    <div class="clientreviewdetails">
+      <form action = {{url_for('review', queried_isbn = book_details_to_be_displayed.isbn)}} method = "post">
+	<div> Rate the book :
+	  <select name="rating" size="1">
+	    <option value=0>0</option>
+	    <option value=1>1</option>
+	    <option value=2>2</option>
+	    <option value=3>3</option>
+	    <option value=4>4</option>
+	    <option value=5>5</option>
+	  </select>
+	</div>
+	<div>Further thoughts about the book ? <br>
+	  <textarea name="text_review" placeholder="Enter your review" cols="30" rows="7"></textarea>
+	  <!--<input type="text" name="text_review" placeholder="Enter review" style="height: 300px; width:500px;">-->
+	</div>
+	<div style="text-align: center;"><button> Submit </button></div>
+      </form>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

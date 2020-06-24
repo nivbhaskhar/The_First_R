@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+
+
+{% block heading %}
+  The first R 
+{% endblock %}
+
+{% block body %}
+<div class="mylinks">
+<div class="mylink">
+  <a href={{url_for('login')}} > Log in </a> <br>
+</div>
+<div class="mylink">
+<a href={{url_for('register')}} > Register </a> <br>
+</div>
+</div>
+{% endblock %}

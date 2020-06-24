@@ -1,0 +1,165 @@
+
+html, body {margin:0;padding:0;height:100%;width: 100%}
+
+body {
+  margin:0;
+  padding:0;
+  color: black;
+  /*overflow: hidden;*/
+  background-color:#faf3e6 ;
+}
+
+.bookdetails{
+    margin: 0;
+    padding: 20px;
+    background-color:#e6bdac;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+
+
+.clientreviewdetails{
+    margin: 0;
+    padding: 20px;
+    background-color:#e6bdac;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+
+
+
+.myheaderimg{
+    width : 100%;
+    height : 30%;
+    background:url('/static/img/bookstack.png');
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    
+}
+
+
+.myflexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    /*height : 100%;*/
+    width : 100%;
+}
+
+.myflexcontainer > div{
+    /*text-align: center;*/
+    font-size: 24px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    /*padding: 20px;*/
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+
+}
+
+
+.mygridcontainer{
+
+    display: grid;
+    height : 100%;
+    width : 100%;
+    grid-template-columns: 0.5fr auto 0.5fr;
+    height : 100%;
+    width : 100%;
+
+}
+
+.mygridelement{
+
+    font-size: 24px;
+
+}
+
+
+
+
+
+
+
+
+
+a {
+  color: brown;
+}
+
+
+h1 {
+    font-family: "arial";
+    font-weight: bold;
+    font-size:28px;
+    margin: auto;
+    color: black;
+    text-align: center;
+}
+
+
+h2 {
+    font-size:28px;
+    margin: auto;
+    color: black;
+    text-align: center;
+}
+
+
+h3 {
+    font-size:28px;
+    margin: auto;
+    color: black;
+    margin:auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.mysearchform{
+    /*background-color:#802115;*/
+    background-color: #faf3e6;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+
+
+}
+.myform{
+ font-size:24px;
+ margin: auto;
+ text-align: center;
+ padding: 20px;
+}
+
+.myformelement{
+ font-size:24px;
+ margin: auto;
+ text-align: center;
+ padding: 20px;
+}
+
+button{
+    font-size: 24px;
+}
+
+input::placeholder {
+    font-size:22px;
+    text-align: center;
+}
+
+input[type="text"] {
+    font-size:24px;
+    height: 40px;
+}
+
+
+
