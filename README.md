@@ -5,9 +5,6 @@ The application also uses Goodreads API to pull up Goodreads data for queried bo
 Finally, the web app comes with API access for users to query details about a book with its ISBN `(/api<isbn>)`
 
 
-(This was done as a project for the CS50 Web Programming with Python and Javascript)
-
-
 ## Contents
 
 ### Python Code  
