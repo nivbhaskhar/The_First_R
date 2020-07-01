@@ -22,8 +22,6 @@ Finally, the web app comes with API access for users to query details about a bo
 * [populate_db.sh](populate_db.sh) - Bash script to populate the database (need to set env variable for database url)  
 * [start_flask.sh](start_flask.sh) - Bash script to run the flask application (need to set env variable for databse url and goodreads developer key)
 
-## Web app in action
-[![A demo](https://img.youtube.com/vi/SwK2xP_SDeQ/0.jpg)](https://www.youtube.com/watch?v=SwK2xP_SDeQ)
 
 ## Screenshots from the web-app 
 
