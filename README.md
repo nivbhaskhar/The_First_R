@@ -74,6 +74,6 @@ The application also uses Goodreads API to pull up Goodreads data for queried bo
 
 * Used Heroku to create and host the database for the application  
 * books.csv was the file with data of 5000 books used to populate the database. Here, a sample file with 10 books is given
-* The 3 Rs refer to Reading, wRiting, and aRithmentic, hence the title (in case you were wondering!)
+* The 3 Rs refer to Reading, wRiting, and aRithmetic, hence the title (in case you were wondering!)
 * psst.. the images used in the website are hand drawn :smiley:  
 
