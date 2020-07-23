@@ -1,6 +1,6 @@
 # The First R - _for you, dear reader_
 
-A Flask web application where readers can sign up, log in and look up books and read and write reviews for them.
+The First R is a Flask web application where readers can sign up, log in and look up books and read and write reviews for them.
 The application also uses Goodreads API to pull up Goodreads data for queried books. Finally, the web app comes with API access for users to query details about a book with its ISBN `(/api<isbn>)`
 
 
